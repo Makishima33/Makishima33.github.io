@@ -53,7 +53,6 @@ body {
 .intro {
   padding: 100px 20px;
   margin-top: 60px;
-  /* width: 100%; */
 }
 
 .intro-content {
@@ -101,7 +100,6 @@ body {
 #education {
   padding: 40px 20px;
   background-color: #f4f4f4;
-  width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -109,6 +107,7 @@ body {
   font-size: 1.75rem;
   color: #2c3e50;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .experience-item,
@@ -116,7 +115,6 @@ body {
   background: #fff;
   padding: 20px;
   max-width: 800px;
-  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -144,9 +142,20 @@ ul li {
   margin-top: 40px;
   height: 50px;
   font-size: 0.75rem;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .navbar-title {
+    display: none;
+  }
   .intro-content {
     flex-direction: column;
     text-align: center;
@@ -157,18 +166,17 @@ ul li {
   }
 
   .intro-image-container {
-    width: 100%; /* Ensure the image container takes up full width */
+    width: 100%;
   }
 
   .intro-image {
-    max-width: 80%; /* Limit image size on smaller screens */
-    margin: 0 auto; /* Center the image */
+    max-width: 80%;
+    margin: 0 auto;
   }
   #experience,
   #education {
     padding: 20px 15px;
     background-color: #f4f4f4;
-    /* width: 90%; */
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -176,29 +184,7 @@ ul li {
 
   .experience-item,
   .education-item {
-    /* width: 100%; */
     margin: 10px auto;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  .intro {
-    margin-top: 100px;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
-  }
-
-  .intro-content {
-    padding: 20px;
   }
 
   h1 {
